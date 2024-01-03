@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "6a35e9ff-ee76-4827-b7e2-8729551bc547",
+		"name": "owners",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28169960",
+		"_collection_link": "https://www.postman.com/planetary-sunset-839501/workspace/team-workspace/collection/28169960-6a35e9ff-ee76-4827-b7e2-8729551bc547?action=share&source=collection_link&creator=28169960"
+	},
+	"item": [
+		{
+			"name": "get owners",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{JetIn.com}}/api/v1/owners?limit=4",
+					"host": [
+						"{{JetIn.com}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"owners"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "4"
+						},
+						{
+							"key": "",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get specific owner",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{JetIn.com}}/api/v1/owners/131",
+					"host": [
+						"{{JetIn.com}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"owners",
+						"131"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add new owner",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"moner eyad\",\n    \"phone\":\"0459844758\"\n\n}\n\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{JetIn.com}}/api/v1/owners",
+					"host": [
+						"{{JetIn.com}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"owners"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update owner",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"    صالح اياد\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{JetIn.com}}/api/v1/owners/131",
+					"host": [
+						"{{JetIn.com}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"owners",
+						"131"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete owner",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{JetIn.com}}/api/v1/owners/131",
+					"host": [
+						"{{JetIn.com}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"owners",
+						"131"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

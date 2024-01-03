@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "7f1b3aac-7b55-4ba4-bd24-11b68c179053",
+		"name": "vehicle income",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28169960",
+		"_collection_link": "https://www.postman.com/planetary-sunset-839501/workspace/team-workspace/collection/28169960-7f1b3aac-7b55-4ba4-bd24-11b68c179053?action=share&source=collection_link&creator=28169960"
+	},
+	"item": [
+		{
+			"name": "get incomes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{JetIn.com}}/api/v1/vehicleIncomes?limit=5",
+					"host": [
+						"{{JetIn.com}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"vehicleIncomes"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get specific income",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{JetIn.com}}/api/v1/vehicleIncomes/2",
+					"host": [
+						"{{JetIn.com}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"vehicleIncomes",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update vehicle  income",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n\"hours_worked\":10\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{JetIn.com}}/api/v1/vehicleIncomes/2",
+					"host": [
+						"{{JetIn.com}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"vehicleIncomes",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete vehicle  income",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n\"hours_worked\":10\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{JetIn.com}}/api/v1/vehicleIncomes/2000",
+					"host": [
+						"{{JetIn.com}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"vehicleIncomes",
+						"2000"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

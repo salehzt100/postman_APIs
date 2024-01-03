@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "477cf3e4-60dd-4b7a-993a-16d307a19c89",
+		"name": "workshop financial  process",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28169960",
+		"_collection_link": "https://www.postman.com/planetary-sunset-839501/workspace/team-workspace/collection/28169960-477cf3e4-60dd-4b7a-993a-16d307a19c89?action=share&source=collection_link&creator=28169960"
+	},
+	"item": [
+		{
+			"name": "get financials process",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{JetIn.com}}/api/v1/workshopFinancials?limit=8",
+					"host": [
+						"{{JetIn.com}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"workshopFinancials"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "8"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get specific financial process",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{JetIn.com}}/api/v1/workshopFinancials/8",
+					"host": [
+						"{{JetIn.com}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"workshopFinancials",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n\"rate_per_hour_and_cup\":2\n\n\n\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{JetIn.com}}/api/v1/workshopFinancials/4",
+					"host": [
+						"{{JetIn.com}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"workshopFinancials",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete specific financial process",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{JetIn.com}}/api/v1/workshopFinancials/7",
+					"host": [
+						"{{JetIn.com}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"workshopFinancials",
+						"7"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

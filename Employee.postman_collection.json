@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "373dfd3d-1dbd-4372-b009-59eccad35ea3",
+		"name": "Employee",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28169960",
+		"_collection_link": "https://www.postman.com/planetary-sunset-839501/workspace/team-workspace/collection/28169960-373dfd3d-1dbd-4372-b009-59eccad35ea3?action=share&source=collection_link&creator=28169960"
+	},
+	"item": [
+		{
+			"name": "get employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{JetIn.com}}/api/v1/employees",
+					"host": [
+						"{{JetIn.com}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"employees"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get specific employee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{JetIn.com}}/api/v1/employees/600",
+					"host": [
+						"{{JetIn.com}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"employees",
+						"600"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add new employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"moner eyad\",\n    \"phone\":\"0566649775\",\n    \"national_id\":\"776779946\",\n    \"status\":\"active\",\n    \"salary\":4566\n\n}\n\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{JetIn.com}}/api/v1/employees",
+					"host": [
+						"{{JetIn.com}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update employee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"    صالح اياد\",\n  \"national_id\": \"6476474\"\n\n \n} ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{JetIn.com}}/api/v1/employees/37",
+					"host": [
+						"{{JetIn.com}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"employees",
+						"37"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete employee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{JetIn.com}}/api/v1/employees/500",
+					"host": [
+						"{{JetIn.com}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"employees",
+						"500"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
