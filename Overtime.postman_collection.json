@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "1657ade9-8633-45bf-9093-c7e1133409d2",
+		"name": "Overtime",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28169960",
+		"_collection_link": "https://www.postman.com/planetary-sunset-839501/workspace/team-workspace/collection/28169960-1657ade9-8633-45bf-9093-c7e1133409d2?action=share&source=collection_link&creator=28169960"
+	},
+	"item": [
+		{
+			"name": "add overtime OR award to employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\n    \"employee_financial_type\":\"award\",\n    \"hours_worked\":20,\n    \"rate_per_hour\":3,\n    \"amount\":333\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{JetIn.com}}/api/v1/employee/6/employeeOvertimes",
+					"host": [
+						"{{JetIn.com}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"employee",
+						"6",
+						"employeeOvertimes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n{\n        \"employee_financial_type\" : \"overtime\"\n        ,\"rate_per_hour\":3,\n        \"hours_worked\": 5,\n        \"employee_id\":2\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{JetIn.com}}/api/v1/employeeOvertimes/24",
+					"host": [
+						"{{JetIn.com}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"employeeOvertimes",
+						"24"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{JetIn.com}}/api/v1/employeeOvertimes/24",
+					"host": [
+						"{{JetIn.com}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"employeeOvertimes",
+						"24"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

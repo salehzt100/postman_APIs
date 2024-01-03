@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "967955e9-039e-4bdb-b3f4-514dd7adc87b",
+		"name": "checks",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28169960",
+		"_collection_link": "https://www.postman.com/planetary-sunset-839501/workspace/team-workspace/collection/28169960-967955e9-039e-4bdb-b3f4-514dd7adc87b?action=share&source=collection_link&creator=28169960"
+	},
+	"item": [
+		{
+			"name": "get checks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{JetIn.com}}/api/v1/checks?limit=8",
+					"host": [
+						"{{JetIn.com}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"checks"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "8"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get specific checks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{JetIn.com}}/api/v1/checks/1",
+					"host": [
+						"{{JetIn.com}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"checks",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add check",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n       \"amount\": 5000,\r\n        \"dueDate\": \"2020-1-24\",\r\n        \"owner\": \"saleh zetawi\"\r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{JetIn.com}}/api/v1/checks",
+					"host": [
+						"{{JetIn.com}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"checks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update check",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{JetIn.com}}/api/v1/checks/1",
+					"host": [
+						"{{JetIn.com}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"checks",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete check",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{JetIn.com}}/api/v1/checks/1",
+					"host": [
+						"{{JetIn.com}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"checks",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
